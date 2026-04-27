@@ -1,1 +1,2 @@
 this is just a test for conflict managment for git 
+test 1
