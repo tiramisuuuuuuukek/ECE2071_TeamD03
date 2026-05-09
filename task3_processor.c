@@ -61,7 +61,6 @@ uint16_t raw_adc_val = 0;
 uint16_t prev_sample = 512;     // start near midpoint for 10-bit ADC (save 1st value for Moving Average filter of 3)
 uint16_t prev_sample2 = 512;	// save 2nd value for Moving Average filter of 3
 uint16_t filtered_sample = 512;		// initial value near midpoint instead of 0 is better for average
-uint16_t downsample_prev = 512;		// initial value near midpoint instead of 0 is better for average
 
 
 // Downsampling by 2
@@ -504,7 +503,6 @@ static void reset_audio_filter_state(void)
     prev_sample = 512;
     prev_sample2 = 512;
     filtered_sample = 512;
-    downsample_prev = 512;
     sample_toggle = 0;
     output_val = 0;
     downsam_sum = 0;
