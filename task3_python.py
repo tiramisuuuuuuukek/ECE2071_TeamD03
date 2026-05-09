@@ -16,7 +16,7 @@ import serial.tools.list_ports
 PORT = "COM6"          # Processing STM COM port
 BAUD_RATE = 921600     # Must match Processing STM USART2
 SAMPLE_RATE = 22050    # Task 3 output rate after downsampling
-TEAM_ID = "TeamID"
+TEAM_ID = "D03"
 
 RAW_FILENAME = "raw_ADC_values.data"
 
